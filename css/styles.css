@@ -19,7 +19,7 @@ headE {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 2.5s;
     transform-style: preserve-3d;
   }
   
@@ -49,3 +49,7 @@ headE {
     color: white;
     transform: rotateY(180deg);
   } 
+
+  body {
+  font-family: 'Optima';
+}
