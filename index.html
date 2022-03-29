@@ -28,7 +28,7 @@
                   <div class="flip-box-back" style="background-image: url('assets/dlipbox.jpg');">
                     <p class="display-1">
                       <br>
-                      Pizza is the world’s greatest food. <br> Nothing says: <br>
+                      <span style="color: yellow;"><em>Pizza</em></span> is the world’s greatest food. <br> Nothing says: <br>
                       <span style="color:red">“I love you,”</span>  <br>
                       <span style="color: pink">“I’m sorry,”</span>  <br>
                       or <br> <span style="color:blue">“let’s be friends”</span>  <br>
@@ -40,35 +40,25 @@
         </div>
         <div class="col-4 text-white border" style="font-size: 1.5em;" >
           
-          <h2 class="display-5 text-center m-5">Order Now</h2>
+          <h2 class="display-5 text-center m-1">Order Now</h2>
 
           <form id="myForm">
-            <div class="form-group">
-              <label for="myRadio1">Size: </label>
-              <label class="radio-inline">
-                <input type="radio" name="optradio1" checked>Small
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="optradio1">Medium
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="optradio1">Large
-              </label>
-            </div>
-            <div class="form-group mb-4">
-              <label for="myRadio2">Crust: </label>
-              <label class="radio-inline">
-                <input type="radio" name="optradio2" checked>Crispy
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="optradio2">Stuffed
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="optradio2">Glutten Free
-              </label>
-            </div>
-            <div class="form-group mb-4">
-              <label for="myToppings">Toppings</label>
+            <div class="form-group border border-light text-center">
+              <h4>Select your pizza Size: </h4>
+              <label for=""><input type="radio" name="radioSize" id="small" value="small" checked>Small</label><br>
+              <label for=""><input type="radio" name="radioSize" id="medium" value="medium">Medium</label><br>
+              <label for=""><input type="radio" name="radioSize" id="large" value="large">Large</label><br>           
+            </div><br>
+
+            <div class="form-group border border-light text-center">
+              <h4>Select your favourite Crust?</h4>
+              <label for=""><input type="radio" name="radioCrust" id="crispy" value="crispy" checked>Crispy</label><br>
+              <label for=""><input type="radio" name="radioCrust" id="stuffed" value="stuffed">Stuffed</label><br>
+              <label for=""><input type="radio" name="radioCrust" id="glutten free" value="glutten free">Glutten Free</label><br>  
+            </div><br>
+
+            <div class="form-group border border-light text-center">
+              <h4>Select your favourite Topping</h4>
               <select class="select mySelect form-group mdb-select md-form" multiple id="myToppings" multiple data-mdb-filter="true" required>
                 <option value="">Choose ...</option>
                 <option value="Pineapple">Pineapple</option>
@@ -101,7 +91,7 @@
     </div>
    
     <!-- Footer -->
-  <div class="row">
+  <div class="row text-white border m-3">
     <footer class="text-center text-lg-start bg-light text-muted">
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2022 La Pizza
