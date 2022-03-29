@@ -89,11 +89,33 @@ function getSelectedCrust(){
 $(document).ready(function(){
     $('#myForm').submit(function(e){
         e.preventDefault();
-        var mySize = $('optradio1').checked(function(){
+        var mySize = getSelectedSize();
+        var myCrust = getSelectedCrust();
+        var myToppings = $("#myToppings").val();
+        var myNumber = $('.count').val();
 
-        })
+        var newPizza = new Pizza(mySize,myCrust,myToppings);
 
-    })
+        var price = newPizza.getSizePrice() + newPizza.getCrustPrize() + newPizza.getToppingPrice();
+
+        var delivery = document.getElementById("delivery");
+
+        var location = '';
+
+        var deliveryCost = 0;
+
+        if(delivery == true){
+            alert("You will be charged KES 250 for the delivery");
+            location = prompt("What is the Delivery Location? ");
+            deliveryCost = 250;
+            price = (price * myNumber) + deliveryCost;
+            alert("Delivery will be made in " + location)
+        } else {
+            price = price * myNumber
+        }
 
 
-})
+
+});
+
+};
