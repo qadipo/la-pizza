@@ -11,4 +11,4 @@ A client further gets offers the option of choosing delivery and upon checkout t
 - JavaScript (jQuery)
 
 ## Live Link
-To view the website click [here]()
+To view the website click [here](https://qadipo.github.io/la-pizza/)
